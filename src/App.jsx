@@ -21,7 +21,7 @@ const App = () => {
             <ExperienceSection />
             <TechStack />
             <Testimonials />
-             <Contact />
+            <Contact />
             <Footer />
         </>
     )
