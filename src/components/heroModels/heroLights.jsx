@@ -9,14 +9,14 @@ const HeroLights = () => {
             angle={0.15}
             intensity={100}
             penumbra={0.2}
-            color="4cc9f0"
+            color="#4cc9f0"
             />
             <spotLight
             position={[-3, 5, 5]}
             angle={0.4}
             intensity={60}
             penumbra={1}
-            color="9d4edd"
+            color="#9d4edd"
             />
             <primitive
             object={new THREE.RectAreaLight('#A259FF', 8, 3, 2)}

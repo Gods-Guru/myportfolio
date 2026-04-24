@@ -1,7 +1,5 @@
-import React from 'react'
 import {words} from "../constants/index.js";
 import Button from "../components/Button.jsx";
-import HeroExperience from "../components/heroModels/heroExperience.jsx";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import AnimatedCounter from "../components/AnimatedCounter.jsx";
@@ -31,7 +29,8 @@ const Hero = () => {
             <div className="hero-layout">
                 {/*  LEFT: HERO CONTENT  */}
                 <header className="flex flex-col justify-center md:w-full w-screen md:px-20 px-5">
-                    <div className="flex flex-col gap-7">
+                    <div className="flex flex-col gap-5
+                    x">
                         <div className="hero-text">
                             <h1>Shaping
                                 <span className="slide">
@@ -61,10 +60,14 @@ const Hero = () => {
                         />
                     </div>
                 </header>
-                {/*  RIGHT: 3D MODEL  */}
+                {/*  RIGHT: HERO IMAGE  */}
                 <figure>
-                    <div className="hero-3d-layout">
-                        <HeroExperience />
+                    <div className="hero-3d-layout flex justify-center items-center">
+                        <img 
+                            src="/images/hero-image.png" 
+                            alt="Hero Graphic" 
+                            className="w-[80%] h-[80%] xl:w-full xl:h-full object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-700 ease-in-out"
+                        />
                     </div>
                 </figure>
             </div>

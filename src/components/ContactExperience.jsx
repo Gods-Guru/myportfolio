@@ -5,16 +5,16 @@ import {Computer} from "./models/Computer-optimized.jsx";
 
 const ContactExperience = () => {
     return (
-        <Canvas shadow camera={{ position: [0, 3, 7], fov: 45 }}>
-            <ambientLight intensity={0.5} color="#fff4e6" />
+        <Canvas shadow camera={{ position: [0, 3, 7], fov: 45 }} dpr={[1, 1.5]}>
+            <ambientLight intensity={0.5} color="#690e65" />
 
-            <directionalLight position={[5, 5, 3]} intensity={2.5} color="#ffd9b3" />
+            <directionalLight position={[5, 5, 3]} intensity={2.5} color="#0000002a" />
 
             <directionalLight
                 position={[5, 9, 1]}
                 castShadow
                 intensity={2.5}
-                color="#ffd9b3"
+                color="#690e65"
             />
 
             <OrbitControls
@@ -30,7 +30,7 @@ const ContactExperience = () => {
                     rotation={[-Math.PI / 2, 0, 0]}
                 >
                     <planeGeometry args={[30, 30]} />
-                    <meshStandardMaterial color="#a46b2d" />
+                    <meshStandardMaterial color="#53064f" />
                 </mesh>
             </group>
 
@@ -41,7 +41,7 @@ const ContactExperience = () => {
             <group scale={[1,1,1]}>
                 <mesh receiveShadow position={[0, -1.5, 0]} rotation={[Math.PI / 2, 0, 0]}>
                     <planeGeometry args={[30, 30]} />
-                    <meshStandardMaterial color="#a46b2d"/>
+                    <meshStandardMaterial color="#000000"/>
                 </mesh>
             </group>
         </Canvas>

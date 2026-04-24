@@ -73,17 +73,17 @@ const logoIconsList = [
 
 const abilities = [
   {
-    imgPath: "/images/seo.png",
+    imgPath: "/images/graph-icon.png",
     title: "Quality Focus",
     desc: "Delivering high-quality results while maintaining attention to every detail.",
   },
   {
-    imgPath: "/images/chat.png",
+    imgPath: "/images/mess-icon.png",
     title: "Reliable Communication",
     desc: "Keeping you updated at every step to ensure transparency and clarity.",
   },
   {
-    imgPath: "/images/time.png",
+    imgPath: "/images/alarm.png",
     title: "On-Time Delivery",
     desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
   },
@@ -91,20 +91,20 @@ const abilities = [
 
 const techStackImgs = [
   {
-    name: "React Developer",
+    name: "Frontend Developer",
     imgPath: "/images/logos/react.png",
   },
   {
-    name: "Python Developer",
-    imgPath: "/images/logos/python.svg",
+    name: "UI/UX Designer", //replace icon to Figma
+    imgPath: "/models/figma.png",
+  },
+  {
+    name: "Web Designer", //replace icon to Framer/Webflow
+    imgPath: "/models/webflow.png",
   },
   {
     name: "Backend Developer",
     imgPath: "/images/logos/node.png",
-  },
-  {
-    name: "Interactive Developer",
-    imgPath: "/images/logos/three.png",
   },
   {
     name: "Project Manager",
@@ -114,25 +114,25 @@ const techStackImgs = [
 
 const techStackIcons = [
   {
-    name: "React Developer",
+    name: "Frontend Developer",
     modelPath: "/models/react_logo-transformed.glb",
     scale: 1,
     rotation: [0, 0, 0],
   },
   {
-    name: "Python Developer",
-    modelPath: "/models/python-transformed.glb",
+    name: "UI/UX Designer",
+    modelPath: "/models/figma.png",
     scale: 0.8,
     rotation: [0, 0, 0],
   },
   {
-    name: "Backend Developer",
+    name: "Web Designer",
     modelPath: "/models/node-transformed.glb",
     scale: 5,
     rotation: [0, -Math.PI / 2, 0],
   },
   {
-    name: "Interactive Developer",
+    name: "Backend Developer",
     modelPath: "/models/three.js-transformed.glb",
     scale: 0.05,
     rotation: [0, 0, 0],
@@ -147,39 +147,39 @@ const techStackIcons = [
 
 const expCards = [
   {
-    review: "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
+    review: "Grace is an amazing and focused individual. While working with us, she brings clarity and precision. She delivers on time and is reliable and direct.",
     imgPath: "/images/exp1.png",
     logoPath: "/images/logo1.png",
     title: "Frontend Developer",
-    date: "January 2023 - Present",
+    date: "September 2025 - Present",
     responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
+      "Developed and maintained user-facing features for Bonds Media Concept.",
       "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
       "Optimized web applications for maximum speed and scalability.",
     ],
   },
   {
-    review: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
+    review: "Grace's teaching skills are superb. How she managed to get my 9-year-old daughter to start developing websites in a span of four months still amazes me. She is punctual, humble and reliable.",
     imgPath: "/images/exp2.png",
     logoPath: "/images/logo2.png",
-    title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
+    title: "Information Technology Tutor",
+    date: "September 2025 - March 2026",
     responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
+      "Instructed and guided students on the use of web and app development tools like Python, HTML, CSS and JavaScript.",
+      "Conducted research on child psychology to understand the best teaching method for students.",
+      "Built students' morale in their use of software development tools by conducting quizzes and fun projects that kept them engaged.",
     ],
   },
   {
-    review: "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
+    review: "The time Grace spent working on the start up with us was a good one. She delivered quality designs, delivered on time, and also helped coordinate some other areas in the project.",
     imgPath: "/images/exp3.png",
     logoPath: "/images/logo3.png",
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
+    title: "UI/UX Designer",
+    date: "October 2025 - December 2025",
     responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
+      "Built functional and interactive prototypes of the Sairus website and application.",
+      "Conducted research based on popular demand and user-friendly features and implemented them into the design.",
+      "Collaborated closely with the development team to implement features based on feedback.",
     ],
   },
 ];
@@ -201,46 +201,46 @@ const expLogos = [
 
 const testimonials = [
   {
-    name: "Esther Howard",
-    mentions: "@estherhoward",
+    name: "Nweke Justin",
+    mentions: "@Nweke Justin",
     review:
-      "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
-    imgPath: "/images/client1.png",
+      "Grace is a UI/UX designer who turns complexideas into intuitive, user friendly designs. Detail-oriented, calm under pressure, and highly collaborative, she consistently delivers high-quality work and is a strong asset to any team.",
+    // imgPath: "/images/client5.png",
   },
   {
-    name: "Wade Warren",
-    mentions: "@wadewarren",
+    name: "Favour Edeh",
+    mentions: "@Favour Edeh",
     review:
-      "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
-    imgPath: "/images/client3.png",
+      "In school, Grace has proved to be competent and ambitious. A high performing student, highly determined, and works excellently well alone or in a team. She has good communication skills, and high emotional intelligence. She is punctual, neat and orderly and sticks to deadlines.",
+    // imgPath: "/images/client3.png",
   },
   {
-    name: "Guy Hawkins",
-    mentions: "@guyhawkins",
+    name: "Obodo Ivy",
+    mentions: "@Ivy Obodo",
     review:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    imgPath: "/images/client2.png",
+      "I had the pleasure of working with Grace on our GitHub and Collaboration project, and she proved to be efficient, reliable and easy to work with. She met deadlines, communicated clearly, and kept the team aligned. Her problem-solving skills and calm approach under pressure stood out, and she consistently delivered high-quality results. I highly recommend Grace to anyone seeking a competent and professional team member.",
+    // imgPath: "/images/client2.png",
   },
   {
-    name: "Marvin McKinney",
-    mentions: "@marvinmckinney",
+    name: "Victoria Obe",
+    mentions: "@Victoria Obiageli Obe",
     review:
-      "Adrian was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
-    imgPath: "/images/client5.png",
+      "I can’t say enough good things about Grace. She was able to take our complex project requirements and turn them into a seamless, functional website. Her problem-solving abilities are outstanding.",
+    // imgPath: "/images/client1.png",
   },
   {
-    name: "Floyd Miles",
-    mentions: "@floydmiles",
+    name: "Jason O'Byron",
+    mentions: "@jaosonobyron",
     review:
-      "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
-    imgPath: "/images/client4.png",
+      "Grace bridges vision and execution with ease. On a complex medical project, she stood out for her detail, problem-solving, and strong focus on user experience. She challenges briefs to find the best solutions - making her a highly valuable, techincally skilled designer.",
+    // imgPath: "/images/client4.png",
   },
   {
-    name: "Albert Flores",
-    mentions: "@albertflores",
+    name: "Jimoh Abdulhameed",
+    mentions: "@abdulhameed",
     review:
-      "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
-    imgPath: "/images/client6.png",
+      "I'm pleased to recommend Grace. I've worked with her on a project from school, and she showed strong integrity, honesty, and a high level of trustworthiness. She is reliable, communicates clearly, and follows through her commitments. Her work ethic and attention to detail makes her someone to depend on without hesitation.",
+    // imgPath: "/images/client6.png",
   },
 ];
 
@@ -248,18 +248,22 @@ const socialImgs = [
   {
     name: "insta",
     imgPath: "/images/insta.png",
+    url: "https://www.instagram.com/that_one_tech_guru?igsh=MWZidzQ2ZDAzZGQ0OA==",
   },
   {
     name: "fb",
     imgPath: "/images/fb.png",
+    url: "https://www.facebook.com/profile.php?id=61553634173962&mibextid=ZbWKwL",
   },
   {
     name: "x",
     imgPath: "/images/x.png",
+    url: "https://x.com/EkonduO4887",
   },
   {
     name: "linkedin",
     imgPath: "/images/linkedin.png",
+    url: "https://www.linkedin.com/in/ekondu-obe-58939a325",
   },
 ];
 

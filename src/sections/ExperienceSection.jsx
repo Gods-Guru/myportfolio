@@ -1,4 +1,3 @@
-// import React from 'react'
 import TitleHeader from "../components/TitleHeader.jsx";
 import { expCards } from "../constants/index.js";
 import GlowCard from "../components/GlowCard.jsx";
@@ -40,7 +39,7 @@ const ExperienceSection = () => {
         })
 
         gsap.utils.toArray('.expText').forEach((text) => {
-            gsap.from(card, {
+            gsap.from(text, {
                 xPercent: 0,
                 opacity: 0,
                 duration: 1,
@@ -64,9 +63,9 @@ const ExperienceSection = () => {
                             <div key={card.title} className="exp-card-wrapper">
                                 <div className="xl:w-2/6">
                                     <GlowCard card={card} index={index}>
-                                        <div>
+                                        {/* <div>
                                             <img src={card.imgPath} alt={card.title} />
-                                        </div>
+                                        </div> */}
                                     </GlowCard>
                                 </div>
                                 <div className="xl:w-4/6">
@@ -75,9 +74,9 @@ const ExperienceSection = () => {
                                             <div className="timeline" />
                                             <div className="gradient-line w-1 h-full" />
                                         </div>
-                                        <div className="expTeaxt flex xl:gap-20 md: gap-10 gap-5 relative z-20">
+                                        <div className="expText flex xl:gap-20 md:gap-10 gap-5 relative z-20">
                                             <div className="timeline-logo">
-                                                <img src={card.logoPath} alt="logo" />
+                                                <span className="text-white text-xl md:text-3xl font-bold">{index + 1}</span>
                                             </div>
                                             <div>
                                                 <h1 className="font-semibold text-3xl">{card.title}</h1>

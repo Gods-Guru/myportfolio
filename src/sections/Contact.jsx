@@ -1,8 +1,8 @@
-import { useRef, useState } from "react";
+import { useRef, useState, lazy, Suspense } from "react";
 import emailjs from "@emailjs/browser";
 
 import TitleHeader from "../components/TitleHeader";
-import ContactExperience from "../components/ContactExperience.jsx";
+const ContactExperience = lazy(() => import("../components/ContactExperience.jsx"));
 
 const Contact = () => {
     const formRef = useRef(null);
@@ -12,6 +12,7 @@ const Contact = () => {
         email: "",
         message: "",
     });
+    const [statusMsg, setStatusMsg] = useState({ type: "", text: "" });
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -32,8 +33,12 @@ const Contact = () => {
 
             // Reset form and stop loading
             setForm({ name: "", email: "", message: "" });
+            setStatusMsg({ type: "success", text: "Message sent successfully!" });
+            setTimeout(() => setStatusMsg({ type: "", text: "" }), 5000);
         } catch (error) {
-            console.error("EmailJS Error:", error); // Optional: show toast
+            console.error("EmailJS Error:", error);
+            setStatusMsg({ type: "error", text: "Failed to send message. Please try again." });
+            setTimeout(() => setStatusMsg({ type: "", text: "" }), 5000);
         } finally {
             setLoading(false); // Always stop loading, even on error
         }
@@ -92,6 +97,12 @@ const Contact = () => {
                                     />
                                 </div>
 
+                                {statusMsg.text && (
+                                    <p className={`text-sm ${statusMsg.type === 'success' ? 'text-green-500' : 'text-red-500'}`}>
+                                        {statusMsg.text}
+                                    </p>
+                                )}
+
                                 <button type="submit" disabled={loading}>
                                     <div className="cta-button group">
                                         <div className="bg-circle" />
@@ -108,8 +119,10 @@ const Contact = () => {
                     </div>
                     {/* 3D Experience - Right Side */}
                     <div className="xl:col-span-7 min-h-96">
-                        <div className="bg-[#cd7c2e] w-full h-full hover:cursor-grab rounded-3xl overflow-hidden">
-                           <ContactExperience />
+                        <div className="bg-purple-800 w-full h-full hover:cursor-grab rounded-3xl overflow-hidden">
+                           <Suspense fallback={<div className="text-white flex items-center justify-center h-full">Loading 3D Experience...</div>}>
+                               <ContactExperience />
+                           </Suspense>
                         </div>
                     </div>
                 </div>

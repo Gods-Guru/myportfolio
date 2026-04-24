@@ -22,10 +22,10 @@ const TechIcon = ({ model }) => {
                 }
             })
         }
-    }, [scene])
+    }, [scene, model.name])
 
     return (
-        <Canvas>
+        <Canvas dpr={[1, 1.5]} frameloop="always">
             <ambientLight intensity={0.5} />
             <directionalLight position={[5,5,5]} intensity={1} />
 
