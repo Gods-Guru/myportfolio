@@ -10,6 +10,7 @@ const ShowcaseSection = () => {
     const project1Ref = useRef(null);
     const project2Ref = useRef(null);
     const project3Ref = useRef(null);
+    const project4Ref = useRef(null);
 
 
     useGSAP(() => {
@@ -39,7 +40,7 @@ const ShowcaseSection = () => {
                     {/* LEFT */}
                     <div className="first-project-wrapper" ref={project1Ref}>
                         <div className="image-wrapper">
-                            <img src="/images/moneytor-dashboard-image.png" alt="Moneytor" />
+                            <a href="https://www.figma.com/proto/0vSOa0BLZxTEV74Im8ty7H/Moneytor---A-Personal-Finance-Tracker?node-id=96-4&t=gJpXCplJGILaJYaz-1"><img src="/images/moneytor-dashboard-image.png" alt="Moneytor" /></a>
                         </div>
                         <div className="text-content">
                             <h2>Prototype of a Personal Finance tracking and Management made simple with a powerful, user-friendly and easy to use application named Moneytor.</h2>
@@ -52,13 +53,13 @@ const ShowcaseSection = () => {
                     <div className="project-list-wrapper overflow-hidden" ref={project2Ref}>
                         <div className="project">
                             <div className="image-wrapper bg-[#ffefdb]">
-                                <img src="/images/financer_image.png" alt="Financer" />
+                                <a href="https://www.figma.com/proto/qoIdmY3p4IJIvszpPUIhMw/Portfolio?node-id=213-306&t=RTelBeDMNfQwsJg9-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=35%3A455&show-proto-sidebar=1"><img src="/images/aure_image.png" alt="Auré" /></a>
                             </div>
-                            <h2>Prototype of a Library Management Platform - Financer</h2>
+                            <h2>Prototype of an E-commerce Application - Auré</h2>
                         </div>
                         <div className="project" ref={project3Ref}>
                             <div className="image-wrapper bg-[#ffe7eb]">
-                                <img src="/images/resturant-web-image.png" alt="Tastier" />
+                                <a href="https://www.figma.com/proto/qoIdmY3p4IJIvszpPUIhMw/Portfolio?node-id=53-1735&t=itsXB37HELN8k2l6-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1"><img src="/images/tastier.png" alt="Tastier" /></a>
                             </div>
                             <h2>Prototype of a Restaurant Website - Tastier</h2>
                         </div>
