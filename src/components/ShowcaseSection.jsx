@@ -53,7 +53,7 @@ const ShowcaseSection = () => {
                     <div className="project-list-wrapper overflow-hidden" ref={project2Ref}>
                         <div className="project">
                             <div className="image-wrapper bg-[#ffefdb]">
-                                <a href="https://www.figma.com/proto/qoIdmY3p4IJIvszpPUIhMw/Portfolio?node-id=213-306&t=RTelBeDMNfQwsJg9-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=35%3A455&show-proto-sidebar=1"><img src="/images/aure_image.png" alt="Auré" /></a>
+                                <a href="https://www.figma.com/proto/qoIdmY3p4IJIvszpPUIhMw/Portfolio?node-id=301-3526&t=Yi0iguCXfS2vsmXA-1&scaling=scale-down&content-scaling=fixed&page-id=45%3A539&starting-point-node-id=301%3A4774"><img src="/images/aure_image.png" alt="Auré" /></a>
                             </div>
                             <h2>Prototype of an E-commerce Application - Auré</h2>
                         </div>
