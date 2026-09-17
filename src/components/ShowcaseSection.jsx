@@ -10,7 +10,8 @@ const ShowcaseSection = () => {
     const project1Ref = useRef(null);
     const project2Ref = useRef(null);
     const project3Ref = useRef(null);
-    const project4Ref = useRef(null);
+
+    const replacementProjectImageUrl = "/images/autolux.png";
 
 
     useGSAP(() => {
@@ -40,12 +41,12 @@ const ShowcaseSection = () => {
                     {/* LEFT */}
                     <div className="first-project-wrapper" ref={project1Ref}>
                         <div className="image-wrapper">
-                            <a href="https://www.figma.com/proto/0vSOa0BLZxTEV74Im8ty7H/Moneytor---A-Personal-Finance-Tracker?node-id=96-4&t=gJpXCplJGILaJYaz-1"><img src="/images/moneytor-dashboard-image.png" alt="Moneytor" /></a>
+                            <a href="https://aas3-alpha.vercel.app/"><img src={replacementProjectImageUrl} alt="AutoLux" /></a>
                         </div>
                         <div className="text-content">
-                            <h2>Prototype of a Personal Finance tracking and Management made simple with a powerful, user-friendly and easy to use application named Moneytor.</h2>
+                            <h2>AutoLux</h2>
                             <p className="text-white-50 md:text-xl">
-                                Designed using tools like Figma and Figjam for enhanced UI and good Developer Experience.
+                                AutoLux is a full-stack automobile accessories e-commerce platform built with the MERN stack. It enables users to browse and purchase products, manage orders, and interact with a streamlined shopping experience, with backend APIs supporting authentication, products, discounts, returns, and order management.
                             </p>
                         </div>
                     </div>
@@ -58,10 +59,10 @@ const ShowcaseSection = () => {
                             <h2>Prototype of an E-commerce Application - Auré</h2>
                         </div>
                         <div className="project" ref={project3Ref}>
-                            <div className="image-wrapper bg-[#ffe7eb]">
-                                <a href="https://www.figma.com/proto/qoIdmY3p4IJIvszpPUIhMw/Portfolio?node-id=53-1735&t=itsXB37HELN8k2l6-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1"><img src="/images/tastier.png" alt="Tastier" /></a>
+                            <div className="image-wrapper">
+                                <a href="https://www.figma.com/proto/0vSOa0BLZxTEV74Im8ty7H/Moneytor---A-Personal-Finance-Tracker?node-id=96-4&t=gJpXCplJGILaJYaz-1"><img src="/images/moneytor-dashboard-image.png" alt="Moneytor" /></a>
                             </div>
-                            <h2>Prototype of a Restaurant Website - Tastier</h2>
+                            <h2>Prototype of a Personal Finance tracking and Management made simple with a powerful, user-friendly and easy to use application named Moneytor.</h2>
                         </div>
                     </div>
                 </div>

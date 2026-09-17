@@ -61,12 +61,12 @@ const Hero = () => {
                     </div>
                 </header>
                 {/*  RIGHT: HERO IMAGE  */}
-                <figure>
+                <figure className="max-[900px]:hidden">
                     <div className="hero-3d-layout flex justify-center items-center">
                         <img 
-                            src="/images/hero-image.png" 
+                            src="/images/me.png" 
                             alt="Hero Graphic" 
-                            className="w-[80%] h-[80%] xl:w-full xl:h-full object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-700 ease-in-out"
+                            className="w-[90%] h-[80%] xl:w-full xl:h-full object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-700 ease-in-out"
                         />
                     </div>
                 </figure>
