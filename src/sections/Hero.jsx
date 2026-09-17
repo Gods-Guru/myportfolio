@@ -51,7 +51,7 @@ const Hero = () => {
                             <h1>into <span className="text-purple-800">Real</span> Projects</h1>
                             <h1>that Deliver <span className="text-purple-800">Results</span></h1>
                         </div>
-                        <p className="text-white-50 md:text:text-xl relative z-10 pointer-events-none">Hi, I'm Grace. A software developer and UI UX designer based in Nigeria with a passion for technology,</p>
+                        <p className="text-white-50 md:text:text-xl relative z-10 pointer-events-none">Hi, I'm Obe Ekondu Grace (E.G.O). A software developer and UI UX designer based in Nigeria with a passion for technology,</p>
                         <p className="text-white-50 md:text:text-xl relative z-10 pointer-events-none"> an obsession with software development, design and a love for learning.</p>
                         <Button
                             className="md:w-80 md:h-16 w-60 h-12"
