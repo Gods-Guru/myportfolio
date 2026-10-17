@@ -2,6 +2,7 @@ import React, { useRef }  from 'react'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import gallery from '../gallery';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -36,33 +37,39 @@ const ShowcaseSection = () => {
     }, []);
     return (
         <section id="work" ref={sectionRef} className="app-showcase">
+            <div className="w-full m-2 flex flex-start">
+                {/* Find a way to route this link to the gallery page and start building */}
+                <a href="./gallery.jsx">See All ➺</a>
+            </div>
             <div className="w-full">
-                <div className="showcaselayout">
-                    {/* LEFT */}
-                    <div className="first-project-wrapper" ref={project1Ref}>
-                        <div className="image-wrapper">
-                            <a href="https://aas3-alpha.vercel.app/"><img src={replacementProjectImageUrl} alt="AutoLux" /></a>
-                        </div>
-                        <div className="text-content">
-                            <h2>AutoLux</h2>
-                            <p className="text-white-50 md:text-xl">
-                                AutoLux is a full-stack automobile accessories e-commerce platform built with the MERN stack. It enables users to browse and purchase products, manage orders, and interact with a streamlined shopping experience, with backend APIs supporting authentication, products, discounts, returns, and order management.
-                            </p>
-                        </div>
-                    </div>
-                    {/* RIGHT */}
-                    <div className="project-list-wrapper overflow-hidden" ref={project2Ref}>
-                        <div className="project">
-                            <div className="image-wrapper bg-[#ffefdb]">
-                                <a href="https://www.figma.com/proto/qoIdmY3p4IJIvszpPUIhMw/Portfolio?node-id=301-3526&t=Yi0iguCXfS2vsmXA-1&scaling=scale-down&content-scaling=fixed&page-id=45%3A539&starting-point-node-id=301%3A4774"><img src="/images/aure_image.png" alt="Auré" /></a>
-                            </div>
-                            <h2>Prototype of an E-commerce Application - Auré</h2>
-                        </div>
-                        <div className="project" ref={project3Ref}>
+                <div className="w-full">
+                    <div className="showcaselayout">
+                        {/* LEFT */}
+                        <div className="first-project-wrapper" ref={project1Ref}>
                             <div className="image-wrapper">
-                                <a href="https://www.figma.com/proto/0vSOa0BLZxTEV74Im8ty7H/Moneytor---A-Personal-Finance-Tracker?node-id=96-4&t=gJpXCplJGILaJYaz-1"><img src="/images/moneytor-dashboard-image.png" alt="Moneytor" /></a>
+                                <a href="https://aas3-alpha.vercel.app/"><img src={replacementProjectImageUrl} alt="AutoLux" /></a>
                             </div>
-                            <h2>Prototype of a Personal Finance tracking and Management made simple with a powerful, user-friendly and easy to use application named Moneytor.</h2>
+                            <div className="text-content">
+                                <h2>AutoLux</h2>
+                                <p className="text-white-50 md:text-xl">
+                                    AutoLux is a full-stack automobile accessories e-commerce platform built with the MERN stack. It enables users to browse and purchase products, manage orders, and interact with a streamlined shopping experience, with backend APIs supporting authentication, products, discounts, returns, and order management.
+                                </p>
+                            </div>
+                        </div>
+                        {/* RIGHT */}
+                        <div className="project-list-wrapper overflow-hidden" ref={project2Ref}>
+                            <div className="project">
+                                <div className="image-wrapper bg-[#ffefdb]">
+                                    <a href="https://www.figma.com/proto/qoIdmY3p4IJIvszpPUIhMw/Portfolio?node-id=301-3526&t=Yi0iguCXfS2vsmXA-1&scaling=scale-down&content-scaling=fixed&page-id=45%3A539&starting-point-node-id=301%3A4774"><img src="/images/aure_image.png" alt="Auré" /></a>
+                                </div>
+                                <h2>Prototype of an E-commerce Application - Auré</h2>
+                            </div>
+                            <div className="project" ref={project3Ref}>
+                                <div className="image-wrapper">
+                                    <a href="https://www.figma.com/proto/0vSOa0BLZxTEV74Im8ty7H/Moneytor---A-Personal-Finance-Tracker?node-id=96-4&t=gJpXCplJGILaJYaz-1"><img src="/images/moneytor-dashboard-image.png" alt="Moneytor" /></a>
+                                </div>
+                                <h2>Prototype of a Personal Finance tracking and Management made simple with a powerful, user-friendly and easy to use application named Moneytor.</h2>
+                            </div>
                         </div>
                     </div>
                 </div>

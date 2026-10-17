@@ -10,6 +10,8 @@ import Testimonials from "./sections/Testimonials.jsx";
 import Contact from "./sections/Contact.jsx";
 import Footer from "./sections/Footer.jsx";
 
+import Gallery from './gallery.jsx';
+
 const App = () => {
     return (
         <>
