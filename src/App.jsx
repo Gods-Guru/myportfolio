@@ -1,3 +1,5 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 import React from 'react'
 import Hero from "./sections/Hero.jsx";
 import ShowcaseSection from "./components/ShowcaseSection.jsx";
@@ -12,8 +14,7 @@ import Footer from "./sections/Footer.jsx";
 
 import Gallery from './gallery.jsx';
 
-const App = () => {
-    return (
+const Home = () => ( 
         <>
             <Navbar />
             <Hero />
@@ -26,6 +27,15 @@ const App = () => {
             <Contact />
             <Footer />
         </>
-    )
-}
+);
+
+const App = () => (
+    <BrowserRouter>
+        <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/gallery" element={<Gallery />} />
+        </Routes>
+    </BrowserRouter>
+);
+
 export default App

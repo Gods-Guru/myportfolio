@@ -3,6 +3,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import gallery from '../gallery';
+import { Link } from 'react-router-dom';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -40,7 +41,7 @@ const ShowcaseSection = () => {
         <section id="work" ref={sectionRef} className="app-showcase">
             <div className="w-full m-2 flex flex-start">
                 {/* Find a way to route this link to the gallery page and start building */}
-                <a href={gallery}>See All ➺</a>
+                <Link to="/gallery">See All ➺</Link>
             </div>
             <div className="w-full">
                 <div className="w-full">

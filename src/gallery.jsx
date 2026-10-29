@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Gallery = () => {
 
@@ -15,7 +15,9 @@ const Gallery = () => {
         project10 = (null),
     ]
   return (
-    <div>gallery</div>
+    <div className='w-full'>
+      <p className='text-white'>This is the gallery page</p>
+    </div>
   )
 }
 
