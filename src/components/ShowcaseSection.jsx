@@ -13,6 +13,7 @@ const ShowcaseSection = () => {
     const project3Ref = useRef(null);
 
     const replacementProjectImageUrl = "/images/autolux.png";
+    const gallery = "../gallery.jsx";
 
 
     useGSAP(() => {
@@ -39,7 +40,7 @@ const ShowcaseSection = () => {
         <section id="work" ref={sectionRef} className="app-showcase">
             <div className="w-full m-2 flex flex-start">
                 {/* Find a way to route this link to the gallery page and start building */}
-                <a href="./gallery.jsx">See All ➺</a>
+                <a href={gallery}>See All ➺</a>
             </div>
             <div className="w-full">
                 <div className="w-full">
